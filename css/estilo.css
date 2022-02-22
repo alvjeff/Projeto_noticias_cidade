@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS',  sans-serif;
+    background: #fff url(/imagens/fundo.png) repeat-x;
+}
+
+#container{
+    width: 750px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+#topo{
+    height: 150px;
+    border: 1px solid red;
+    background: url(/imagens/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+}
+
+.logo{
+    width: 152px;
+    height: 66px;
+    background: url(/imagens/logo.png) no-repeat center; /*obs1*/
+    text-indent: -3000px;
+}
+
+/*Barra de navegacao*/
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#topo ul{
+    margin-top: 30px;
+    background: #b10333;
+    float: left;
+}
+
+#topo ul li{
+    float: left;
+}
+
+#topo ul a{
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #fff;
+    background: url(/imagens/divisor.png) no-repeat left center;/*obs3*/
+}
+
+#topo ul .primeiro a{
+    background: none;
+}
+
+#topo ul a:hover{
+    color: #69001d;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos{ /*obs2*/
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+
+/*configuracao do layout em 3 colunas*/
+#conteudo{
+    margin-top: 60px;
+    background: #f5f5f5;
+}
+#lateral{
+    width: 180px;
+   
+    float: left;
+    margin: 0 0 20px -750px;
+}
+
+#primario{
+    width: 270px;
+    
+    float: left;
+    margin: 0 0 20px 195px; /*obs5*/
+}
+
+#duas-colunas #primario{
+    width: 555px;
+    background: blue;
+    float: left;
+    margin: 0 0 20px 195px; /*obs5*/
+}
+
+#uma-coluna #primario{
+    width: 750px;
+    background: blue;
+    float: left;
+    margin: 0 0 20px 0; /*obs5*/
+}
+#secundario{
+    width: 270px;
+    
+    float: left;
+    margin: 0 0 20px 15px;/*obs6*/
+    
+}
+
+/*Caixa*/
+.caixa{
+    background: url(/imagens/fundo-caixa.png);
+    margin: 10px 0;
+}
+h2{
+    font-size: 1em;
+    background: #294c71;
+    color: #fff;
+    padding: 5px;
+}
+.caixa-conteudo{
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/*Formatacao menu lateral*/
+#lateral ul a{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+#lateral ul a:hover{
+    color: #a1a1a1;
+    background: url(/imagens/marcador.png) no-repeat left center;
+    padding-left: 20px;
+}
+
+/*Formatando formulario*/
+label{
+    display: block;
+    cursor: pointer;
+}
+input{
+    font-size: 0.9em;
+    background: #fff;
+    padding: 5px;
+    width: 152px;
+}
+input.submit{
+    width: 80px;
+    color: #fff;
+    background: #b10333;
+    border: 2px solid #870529;
+    padding: 5px;
+}
+
+/*formatando imagens*/
+img{
+    border: 2px solid #dfdfdf;
+}
+img.imagem-principal{
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+/*formatando cabeçalhos*/
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3{
+    background: #b10333;
+    color: #fff;
+}
+.entrevista h3{
+    background: #de003e;
+    
+}
+
+/*Formatando lista de noticias*/
+#lista-noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 65px;
+
+}
+#lista-noticias li a img{
+    float: left;
+    margin: 5px;
+}
+#lista-noticias li a{
+    text-decoration: none;
+   
+}
+#lista-noticias li a h3{
+    font-size: 0.8em;
+    padding: 0;
+    color: blue;
+}
+#lista-noticias li a p{
+    font-size: 0.6em;
+}
+#lista-noticias li:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+
+/*rodapé*/
+#container-rodape{
+    clear: both;
+    background: #294c71;
+    padding: 20px;
+}
+#rodape{
+    width: 750px;
+    margin: 0 auto;/*obs4*/
+    color: #fff;
+    padding: 5px;
+}
+
+
+/*observacoes*/
+
+/*obs1: esse 'center' é dentro do container que esse background está inserido, no caso um h1 com as dimensoes definidas em '.logo'*/
+
+/*obs2: mesma configuracao para mais paginas html. Isto deixa o respectivo item do menu ja selecionado conforme a página selecionada*/
+
+/*obs3: imagem da linha divisoria de cada link*/
+
+/*obs4: deixa o conteudo do mesmo tamanho e margens laterais do conteudo da pagina*/
+
+/*obs5: Primeiro devo lembrar que esse projeto é com uma página de layout fixo. Segundo que esse 195px de margem esquerda é para caber os 180px a esquerda do conteudo #lateral e mais 15px de espaçamento entre o conteúdo #lateral e #primário*/
+
+/*obs6: esses 15px de margem lateral esquerda fez com que todo o conteudo ficasse centralizado dentro do conteiner. Não entendi bem o pq, talvez pq somando todoas as margens, desse o witdh total do container. Outro fator a observar, é que no html essas tres divs estao declaradas em ordem diferente, segundo o que o curso fala é para melhor leitura dos buscadores. Mas para melhor entendimento ou visualização do usuário, é feita toda essa jogada com as margens, lembrando que esses elementos estao em float para  esquerda e as margens determinam o posicionamento.
+
+Extra: não concordo muito com essa abordagem do display float e utilizacao dar margens para ajustar os elementos nas posicoes. Vou fazer assim por enquanto o curso está ensinando esta opcao. Se mais a frente tiver outra abordagem com display flex por exemplo ou voltada mais para design responsivo, será esta quer pretenderei adotar e me aprofundar.*/
+
+/*ob*/
