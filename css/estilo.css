@@ -29,6 +29,13 @@ body{
 }
 
 /*Barra de navegacao*/
+a:link, a:visited{
+    color: #b10333;
+    padding: 2px;
+}
+a:hover{
+    color: #e50040;
+}
 ul{
     margin: 0;
     padding: 0;
@@ -96,14 +103,14 @@ body.fotos #navegacao a#fotos{ /*obs2*/
 
 #duas-colunas #primario{
     width: 555px;
-    background: blue;
+    /* background: blue; */
     float: left;
     margin: 0 0 20px 195px; /*obs5*/
 }
 
 #uma-coluna #primario{
     width: 750px;
-    background: blue;
+    /* background: blue; */
     float: left;
     margin: 0 0 20px 0; /*obs5*/
 }
@@ -211,10 +218,11 @@ h3{
 #lista-noticias li a h3{
     font-size: 0.8em;
     padding: 0;
-    color: blue;
+    color: #3e7ab9;
 }
 #lista-noticias li a p{
-    font-size: 0.6em;
+    font-size: 0.7em;
+    color: #000;
 }
 #lista-noticias li:hover{
     background: #eee;
